@@ -5,9 +5,11 @@
   width: 100%;
   height: 3.5rem;
   background: #212121;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -26,6 +28,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .main-navigation__items li {
@@ -35,10 +38,37 @@
 .main-navigation__items a {
   text-decoration: none;
   color: #fff;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
 }
 
 .main-navigation__items a:hover,
 .main-navigation__items a:active,
 .main-navigation__items a.active {
   color: #f8e264;
+}
+
+.main-navigation__items button,
+.main-navigation__items button:hover,
+.main-navigation__items button:active,
+.main-navigation__items__login-link a,
+.main-navigation__items__login-link a:hover,
+.main-navigation__items__login-link a:active,
+.main-navigation__items__login-link a.active {
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  background: #f8e264;
+  color: #212121;
+  border-radius: 2px;
 }
