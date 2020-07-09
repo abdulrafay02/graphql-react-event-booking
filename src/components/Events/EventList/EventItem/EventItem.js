@@ -7,15 +7,16 @@ const eventItem = (props) => (
     <div>
       <h1>{props.title}</h1>
       <h2>
-        ${props.price} - {new Date(props.date).toLocaleDateString()}
+        <span>${props.price}</span> -{" "}
+        {new Date(props.date).toLocaleDateString()}
       </h2>
     </div>
     <div>
       {props.userId === props.creatorId ? (
-        <p>Your the owner of this event.</p>
+        <p>You're the owner of this event.</p>
       ) : (
         <button
-          className="btn"
+          className="btn btn-primary"
           onClick={props.onDetail.bind(this, props.eventId)}
         >
           View Details
