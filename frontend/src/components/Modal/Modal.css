@@ -11,12 +11,13 @@
 .modal__header {
   padding: 1rem;
   background: #212121;
-  color: white;
+  color: #fce45f;
 }
 
 .modal__header h1 {
   margin: 0;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .modal__content {
