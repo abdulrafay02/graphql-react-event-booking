@@ -164,6 +164,7 @@ class EventsPage extends Component {
   showDetailHandler = (eventId) => {
     this.setState((prevState) => {
       const selectedEvent = prevState.events.find((e) => e._id === eventId);
+      console.log("this.state.selectedEvent", selectedEvent);
       return { selectedEvent: selectedEvent };
     });
   };
@@ -173,6 +174,7 @@ class EventsPage extends Component {
       this.setState({ selectedEvent: null });
       return;
     }
+    console.log(this.state.selectedEvent);
     const requestBody = {
       query: `
           mutation BookEvent($id: ID!) {
@@ -261,21 +263,20 @@ class EventsPage extends Component {
             onConfirm={this.bookEventHandler}
             confirmText={this.context.token ? "Book" : "Confirm"}
           >
-            <h1>{this.state.selectedEvent.title}</h1>
-            <h2>
-              ${this.state.selectedEvent.price} -{" "}
+            <h2 className="events-modal-date">
               {new Date(this.state.selectedEvent.date).toLocaleDateString()}
             </h2>
+            <h2>${this.state.selectedEvent.price}</h2>
             <p>{this.state.selectedEvent.description}</p>
+            <p>
+              For queries, contact at: {this.state.selectedEvent.creator.email}
+            </p>
           </Modal>
         )}
         {this.context.token && (
           <div className="events-control">
             <p>Share your own Events!</p>
-            <button
-              className="btn btn-primary"
-              onClick={this.startCreateEventHandler}
-            >
+            <button className="btn" onClick={this.startCreateEventHandler}>
               Create Event
             </button>
           </div>
