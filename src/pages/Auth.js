@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { toast } from "react-toastify";
 
 import "./Auth.css";
 import AuthContext from "../context/auth-context";
@@ -73,21 +74,29 @@ class AuthPage extends Component {
     })
       .then((res) => {
         if (res.status !== 200 && res.status !== 201) {
-          throw new Error("Failed!");
+          throw new Error("Authentication Failed!");
         }
         return res.json();
       })
       .then((resData) => {
-        if (resData.data.login.token) {
+        if (
+          resData.data.login &&
+          resData.data.login.token &&
+          this.state.isLogin
+        ) {
           this.context.login(
             resData.data.login.token,
             resData.data.login.userId,
             resData.data.login.tokenExpiration
           );
+          return;
         }
+        toast.success("Signed up successfully!");
+        this.switchModeHandler();
       })
       .catch((err) => {
         console.log(err);
+        toast.error(err.message);
       });
   };
 

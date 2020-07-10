@@ -6,6 +6,7 @@ import EventList from "../components/Events/EventList/EventList";
 import Spinner from "../components/Spinner/Spinner";
 import AuthContext from "../context/auth-context";
 import "./Events.css";
+import { toast } from "react-toastify";
 
 class EventsPage extends Component {
   state = {
@@ -104,9 +105,13 @@ class EventsPage extends Component {
           });
           return { events: updatedEvents };
         });
+        toast.success(
+          `Event: "${resData.data.createEvent.title}" created successfully.`
+        );
       })
       .catch((err) => {
         console.log(err);
+        toast.error(err.message);
       });
   };
 
@@ -182,6 +187,9 @@ class EventsPage extends Component {
               _id
              createdAt
              updatedAt
+             event {
+               title
+             }
             }
           }
         `,
@@ -207,9 +215,13 @@ class EventsPage extends Component {
       .then((resData) => {
         console.log(resData);
         this.setState({ selectedEvent: null });
+        toast.success(
+          `Event: "${resData.data.bookEvent.event.title}" booked successfully.`
+        );
       })
       .catch((err) => {
         console.log(err);
+        toast.error(err.message);
       });
   };
 
