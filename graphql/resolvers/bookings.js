@@ -17,14 +17,14 @@ module.exports = {
   },
   bookEvent: async (args, req) => {
     try {
-      if (!req.isAuth) {
-        throw new Error("Unauthenticated!");
-      }
+      if (!req.isAuth) throw new Error("Unauthenticated!");
 
       const fetchedEvent = await Event.findOne({ _id: args.eventId });
+      if (!fetchedEvent) throw new Error("Event not found!");
+
       const booking = new Booking({
         user: req.userId,
-        event: fetchedEvent,
+        event: args.eventId,
       });
       const res = await booking.save();
       return transformBooking(res);

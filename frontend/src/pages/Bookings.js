@@ -5,6 +5,7 @@ import AuthContext from "../context/auth-context";
 import BookingList from "../components/Bookings/BookingList/BookingList";
 import BookingsChart from "../components/Bookings/BookingsChart/BookingsChart";
 import BookingsControls from "../components/Bookings/BookingsControls/BookingsControls";
+import { toast } from "react-toastify";
 
 class BookingsPage extends Component {
   state = {
@@ -99,10 +100,14 @@ class BookingsPage extends Component {
           });
           return { bookings: updatedBookings, isLoading: false };
         });
+        toast.warn(
+          `Event: "${resData.data.cancelBooking.title}" booking cancelled successfully.`
+        );
       })
       .catch((err) => {
         console.log(err);
         this.setState({ isLoading: false });
+        toast.error(err.message);
       });
   };
 
