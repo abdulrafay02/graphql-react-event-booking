@@ -19,12 +19,26 @@ class App extends Component {
     userId: null,
   };
 
+  componentDidMount() {
+    this.initApp();
+  }
+
+  initApp = async () => {
+    const token = (await localStorage.getItem("TOKEN")) || null;
+    const userId = (await localStorage.getItem("USERID")) || null;
+    this.setState({ token, userId });
+  };
+
   login = (token, userId, tokenExpiration) => {
     this.setState({ token: token, userId: userId });
+    localStorage.setItem("TOKEN", token);
+    localStorage.setItem("USERID", userId);
   };
 
   logout = () => {
     this.setState({ token: null, userId: null });
+    localStorage.removeItem("TOKEN");
+    localStorage.removeItem("USERID");
   };
 
   render() {
