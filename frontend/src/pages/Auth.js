@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 
 import "./Auth.css";
 import AuthContext from "../context/auth-context";
+import { BASE_URL } from "../utils/constants";
 
 class AuthPage extends Component {
   state = {
@@ -65,7 +66,7 @@ class AuthPage extends Component {
       };
     }
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {

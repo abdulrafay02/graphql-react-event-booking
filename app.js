@@ -22,7 +22,7 @@ app.use(
   graphqlHTTP({
     schema: graphQlSchema,
     rootValue: graphQlResolvers,
-    graphiql: true,
+    graphiql: process.env.DEV,
   })
 );
 
@@ -31,11 +31,11 @@ mongoose
     `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.z7how.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
   )
   .then(() => {
-    app.listen(4000, () =>
+    app.listen(process.env.PORT, () =>
       console.log(`
 
     ==============================
-    Server is running on port 4000
+    Server is running on port ${process.env.PORT}
     ==============================
     
     `)

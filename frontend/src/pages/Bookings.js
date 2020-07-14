@@ -6,6 +6,7 @@ import BookingList from "../components/Bookings/BookingList/BookingList";
 import BookingsChart from "../components/Bookings/BookingsChart/BookingsChart";
 import BookingsControls from "../components/Bookings/BookingsControls/BookingsControls";
 import { toast } from "react-toastify";
+import { BASE_URL } from "../utils/constants";
 
 class BookingsPage extends Component {
   state = {
@@ -39,7 +40,7 @@ class BookingsPage extends Component {
         `,
     };
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
@@ -79,7 +80,7 @@ class BookingsPage extends Component {
       },
     };
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {

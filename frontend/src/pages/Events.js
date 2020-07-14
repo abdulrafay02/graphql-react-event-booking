@@ -7,6 +7,7 @@ import Spinner from "../components/Spinner/Spinner";
 import AuthContext from "../context/auth-context";
 import "./Events.css";
 import { toast } from "react-toastify";
+import { BASE_URL } from "../utils/constants";
 
 class EventsPage extends Component {
   state = {
@@ -76,7 +77,7 @@ class EventsPage extends Component {
 
     const token = this.context.token;
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
@@ -139,7 +140,7 @@ class EventsPage extends Component {
         `,
     };
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
@@ -198,7 +199,7 @@ class EventsPage extends Component {
       },
     };
 
-    fetch("http://localhost:4000/graphql", {
+    fetch(BASE_URL, {
       method: "POST",
       body: JSON.stringify(requestBody),
       headers: {
