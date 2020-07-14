@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/graphql-mern-event-booking/static/css/main.74bea252.chunk.css",
-    "main.js": "/graphql-mern-event-booking/static/js/main.42d067d9.chunk.js",
-    "main.js.map": "/graphql-mern-event-booking/static/js/main.42d067d9.chunk.js.map",
+    "main.js": "/graphql-mern-event-booking/static/js/main.893bd088.chunk.js",
+    "main.js.map": "/graphql-mern-event-booking/static/js/main.893bd088.chunk.js.map",
     "runtime-main.js": "/graphql-mern-event-booking/static/js/runtime-main.c28a3362.js",
     "runtime-main.js.map": "/graphql-mern-event-booking/static/js/runtime-main.c28a3362.js.map",
     "static/css/2.3a221eca.chunk.css": "/graphql-mern-event-booking/static/css/2.3a221eca.chunk.css",
-    "static/js/2.bbd283a3.chunk.js": "/graphql-mern-event-booking/static/js/2.bbd283a3.chunk.js",
-    "static/js/2.bbd283a3.chunk.js.map": "/graphql-mern-event-booking/static/js/2.bbd283a3.chunk.js.map",
+    "static/js/2.915728cf.chunk.js": "/graphql-mern-event-booking/static/js/2.915728cf.chunk.js",
+    "static/js/2.915728cf.chunk.js.map": "/graphql-mern-event-booking/static/js/2.915728cf.chunk.js.map",
     "index.html": "/graphql-mern-event-booking/index.html",
-    "precache-manifest.eac2edd42c091f0ed8bceeeb6d1fe560.js": "/graphql-mern-event-booking/precache-manifest.eac2edd42c091f0ed8bceeeb6d1fe560.js",
+    "precache-manifest.9b66a65de7b2d110e3d5478520933af2.js": "/graphql-mern-event-booking/precache-manifest.9b66a65de7b2d110e3d5478520933af2.js",
     "service-worker.js": "/graphql-mern-event-booking/service-worker.js",
     "static/css/2.3a221eca.chunk.css.map": "/graphql-mern-event-booking/static/css/2.3a221eca.chunk.css.map",
     "static/css/main.74bea252.chunk.css.map": "/graphql-mern-event-booking/static/css/main.74bea252.chunk.css.map",
-    "static/js/2.bbd283a3.chunk.js.LICENSE.txt": "/graphql-mern-event-booking/static/js/2.bbd283a3.chunk.js.LICENSE.txt"
+    "static/js/2.915728cf.chunk.js.LICENSE.txt": "/graphql-mern-event-booking/static/js/2.915728cf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c28a3362.js",
     "static/css/2.3a221eca.chunk.css",
-    "static/js/2.bbd283a3.chunk.js",
+    "static/js/2.915728cf.chunk.js",
     "static/css/main.74bea252.chunk.css",
-    "static/js/main.42d067d9.chunk.js"
+    "static/js/main.893bd088.chunk.js"
   ]
 }
