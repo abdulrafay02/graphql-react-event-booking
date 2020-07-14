@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccc43064a5ced2aea4ebaf229ccf2548",
+    "revision": "a16a2ac7e7cf5ac40199228060797d5d",
     "url": "/graphql-mern-event-booking/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/graphql-mern-event-booking/static/css/2.3a221eca.chunk.css"
   },
   {
-    "revision": "12ae065c64d38a8190e8",
+    "revision": "26fd52f29ca7cea31597",
     "url": "/graphql-mern-event-booking/static/css/main.74bea252.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/graphql-mern-event-booking/static/js/2.915728cf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "12ae065c64d38a8190e8",
-    "url": "/graphql-mern-event-booking/static/js/main.866051c9.chunk.js"
+    "revision": "26fd52f29ca7cea31597",
+    "url": "/graphql-mern-event-booking/static/js/main.42e737f7.chunk.js"
   },
   {
     "revision": "bdcb6707439d6ca454b5",
