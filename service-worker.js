@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/graphql-mern-event-booking/precache-manifest.0064183e519bcc5c240b958fc0fbdb82.js"
+  "/graphql-mern-event-booking/precache-manifest.eac2edd42c091f0ed8bceeeb6d1fe560.js"
 );
 
 self.addEventListener('message', (event) => {

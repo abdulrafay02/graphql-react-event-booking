@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/graphql-mern-event-booking/static/css/main.74bea252.chunk.css",
-    "main.js": "/graphql-mern-event-booking/static/js/main.8ac6346e.chunk.js",
-    "main.js.map": "/graphql-mern-event-booking/static/js/main.8ac6346e.chunk.js.map",
+    "main.js": "/graphql-mern-event-booking/static/js/main.42d067d9.chunk.js",
+    "main.js.map": "/graphql-mern-event-booking/static/js/main.42d067d9.chunk.js.map",
     "runtime-main.js": "/graphql-mern-event-booking/static/js/runtime-main.c28a3362.js",
     "runtime-main.js.map": "/graphql-mern-event-booking/static/js/runtime-main.c28a3362.js.map",
     "static/css/2.3a221eca.chunk.css": "/graphql-mern-event-booking/static/css/2.3a221eca.chunk.css",
     "static/js/2.bbd283a3.chunk.js": "/graphql-mern-event-booking/static/js/2.bbd283a3.chunk.js",
     "static/js/2.bbd283a3.chunk.js.map": "/graphql-mern-event-booking/static/js/2.bbd283a3.chunk.js.map",
     "index.html": "/graphql-mern-event-booking/index.html",
-    "precache-manifest.0064183e519bcc5c240b958fc0fbdb82.js": "/graphql-mern-event-booking/precache-manifest.0064183e519bcc5c240b958fc0fbdb82.js",
+    "precache-manifest.eac2edd42c091f0ed8bceeeb6d1fe560.js": "/graphql-mern-event-booking/precache-manifest.eac2edd42c091f0ed8bceeeb6d1fe560.js",
     "service-worker.js": "/graphql-mern-event-booking/service-worker.js",
     "static/css/2.3a221eca.chunk.css.map": "/graphql-mern-event-booking/static/css/2.3a221eca.chunk.css.map",
     "static/css/main.74bea252.chunk.css.map": "/graphql-mern-event-booking/static/css/main.74bea252.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3a221eca.chunk.css",
     "static/js/2.bbd283a3.chunk.js",
     "static/css/main.74bea252.chunk.css",
-    "static/js/main.8ac6346e.chunk.js"
+    "static/js/main.42d067d9.chunk.js"
   ]
 }
